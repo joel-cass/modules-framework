@@ -43,7 +43,7 @@
 			<cfset querySetCell(qryReturn, "Name", "form")>
 			<cfset querySetCell(qryReturn, "Value", "form")>
 		<cfelse>
-			<cfdirectory action="list" directory="#expandPath('/farcry/projects/consultingworx/modules/#stcData.moduleName#/view/')#" name="qryModes" filter="*.cfm">
+			<cfdirectory action="list" directory="#expandPath('#application.packagepath#/modules/#stcData.moduleName#/view/')#" name="qryModes" filter="*.cfm">
 			
 			<cfloop query="qryModes">
 				<cfset queryAddRow(qryReturn, 1)>
