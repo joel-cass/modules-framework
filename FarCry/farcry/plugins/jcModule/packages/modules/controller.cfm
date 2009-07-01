@@ -15,14 +15,8 @@ Structure:
 <cfparam name="attributes.defaultMode" type="string" default="default">
 <cfparam name="attributes.stObj" type="struct">
 
-<cfset FormHelper = application.helpers.FormHelper.createInstance()>
-<cfset URLHelper = application.helpers.URLHelper>
-<cfset CategoryHelper = application.helpers.CategoryHelper>
-<cfset PaginationHelper = application.helpers.PaginationHelper>
-
 <cfset _mode = attributes.defaultMode>
 <cfset _path = getDirectoryFromPath(getCurrentTemplatePath())>
-
 
 <cfif NOT directoryExists("#_path#/#attributes.module#")>
 	<cfthrow message="Module #attributes.module# not found.">

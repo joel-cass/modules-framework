@@ -6,7 +6,6 @@
 
 	<cfproperty ftseq="01" ftFieldset="General" name="title" type="string" ftlabel="Title" hint="" blabel="true" ftvalidation="required" />
 	<cfproperty ftseq="02" ftFieldset="General" name="teaser" type="longchar" fttype="richtext" ftlabel="Teaser" hint="" />
-	<cfproperty ftseq="03" ftFieldset="General" name="sendToFriend" type="string" ftlabel="Show Send to Friend link" ftType="list" ftList="No,Yes" ftvalidation="required" />
 	<cfproperty ftseq="10" ftFieldset="Module" name="moduleName" type="string" ftlabel="Module" hint="Name of Module" ftType="list" ftListData="getModules" ftvalidation="required" />
 	<cfproperty ftseq="11" ftFieldset="Module" name="defaultMode" type="string" ftlabel="Default Mode" hint="Name of first mode to execute" ftType="list" ftListData="getModes" ftvalidation="required" />
 	
