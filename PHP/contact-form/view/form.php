@@ -35,6 +35,9 @@ if ( count($aryError) > 0 ) {
 		<input type="submit" id="btnSubmit" value="Send Message">
 	</fieldset>
 
+	<input type="hidden" name="to_email" value="<?php echo $strToEmail; ?>">
+	<input type="hidden" name="subject" value="<?php echo $strSubject; ?>">
+
 	<input type="hidden" name="<?php echo $modeField; ?>" value="submit">
 
 </form>

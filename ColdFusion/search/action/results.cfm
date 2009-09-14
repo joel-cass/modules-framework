@@ -1,0 +1,1 @@
+<cfsearch collection="#collection#" name="qryResult" criteria="#keyword#">
