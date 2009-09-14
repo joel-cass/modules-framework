@@ -2,9 +2,9 @@
 
 $PAGE = $params["PAGE"];
 
-$strTo = $PAGE->getField("Email")->getValue();
+$strTo = $_POST["to_email"];
 $strFrom = $_POST["email"];
-$strSubject = $PAGE->getField("Subject")->getValue();
+$strSubject = $_POST["subject"];
 $strMessage =  "Message posted from " . $_SERVER['SERVER_NAME'];
 $strMessage .= " at " . date( "d-M-Y", time() ) . "\n";
 $strMessage .= "------------------------------------\n\n";

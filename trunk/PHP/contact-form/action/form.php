@@ -3,6 +3,8 @@
 // defaults
 $strName = "";
 $strEmail = "";
+$strFromEmail = "your@email.address";
+$strSubject = "Contact Form Submission";
 $strMessage = "";
 $strSpamCheck = "";
 
