@@ -30,7 +30,12 @@
 			$mode = $_GET[$modeField];
 		}
 
-
+		# include module file for any params
+		$paramsPath = $path . "/" . $module . "/module-params.php";
+		if (file_exists($paramsPath)) {
+			include($paramsPath);
+		}
+	
 		# include model file from processing / getting data
 		$lastMode = "";
 		while ($lastMode != $mode) {

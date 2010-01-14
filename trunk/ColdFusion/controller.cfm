@@ -30,6 +30,11 @@ Structure:
 		<cfset _mode = URL[attributes.modeField]>
 	</cfif>
 	
+	<!--- include module file for any params --->
+	<cfif fileExists("#_path#/#attributes.module#/module-params.cfm")>
+		<cfinclude template="#attributes.module#/module-params.cfm">
+	</cfif>
+	
 	<!--- include model file from processing / getting data --->
 	<cfset lastMode = "">
 	<cfloop condition="#lastMode# NEQ #_mode#">
